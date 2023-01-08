@@ -12,5 +12,5 @@
 ```bash
 $ vagrant up
 $ vagrant ssh
-$ nomad agent -dev
+$ sudo nomad agent -dev -bind=0.0.0.0
 ```

@@ -74,7 +74,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", inline: $script, privileged: false
 
   # Expose the nomad api and ui to the host
-  config.vm.network "forwarded_port", guest: 4646, host: 4646, auto_correct: true, host_ip: "127.0.0.1"
+  config.vm.network "private_network", ip: "192.168.56.10"
 
   # Increase memory for Libvirt
   config.vm.provider "libvirt" do |libvirt|

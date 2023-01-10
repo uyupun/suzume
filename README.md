@@ -16,7 +16,7 @@ $ vagrant up
 # VagrantのBoxにSSH接続
 $ vagrant ssh
 
-# Nomadのエージェント(Client/Server両用)の起動
+# Nomadの開発用のエージェント(Client/Server両用)の起動
 $ sudo nomad agent -dev -bind=0.0.0.0
 
 # VagrantのBoxの削除
